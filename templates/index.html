@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h1>Bienvenue à la Taverne Médiévale</h1>
+<div class="buttons">
+    <a href="{{ url_for('page1') }}" class="button">Option 1</a>
+    <a href="{{ url_for('page2') }}" class="button">Option 2</a>
+    <a href="{{ url_for('page3') }}" class="button">Option 3</a>
+    <a href="{{ url_for('page4') }}" class="button">Option 4</a>
+    <a href="{{ url_for('page5') }}" class="button">Option 5</a>
+    <a href="{{ url_for('page6') }}" class="button">Option 6</a>
+</div>
+{% endblock %}

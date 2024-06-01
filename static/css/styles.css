@@ -1,0 +1,38 @@
+body {
+    background: url(../images/cb81af5d-5dee-4a74-86d0-ea926514987a.webp) no-repeat;
+    background-size: cover;
+    color: #fff;
+    font-family: 'MedievalSharp', cursive;
+    text-align: center;
+}
+
+.container {
+    padding: 20px;
+}
+
+h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.button {
+    background: #444;
+    border: 1px solid #222;
+    border-radius: 10px;
+    color: #fff;
+    display: inline-block;
+    margin: 10px;
+    padding: 20px;
+    text-decoration: none;
+    transition: background 0.3s;
+}
+
+.button:hover {
+    background: #666;
+}
