@@ -6,13 +6,13 @@ app = Flask(__name__)
 def index():
     return render_template('index.html')
 
-@app.route('/page1')
-def page1():
-    return render_template('page1.html')
+@app.route('/Hubert')
+def Hubert():
+    return render_template('Hubert.html')
 
-@app.route('/page2')
-def page2():
-    return render_template('page2.html')
+@app.route('/Giras')
+def Giras():
+    return render_template('Giras.html')
 
 @app.route('/page3')
 def page3():

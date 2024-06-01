@@ -8,6 +8,10 @@ body {
 
 .container {
     padding: 20px;
+    background-color: rgba(0, 0, 0, 0.7); /* Background semi-transparent to make text readable */
+    border-radius: 10px;
+    display: inline-block;
+    margin-top: 50px;
 }
 
 h1 {
@@ -22,17 +26,31 @@ h1 {
 }
 
 .button {
-    background: #444;
-    border: 1px solid #222;
-    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url(../images/frame_bouton.png) no-repeat center center;
+    background-size: 100% 100%; /* Ensures the background image scales with the button */
+    background-size: cover;
+    border: 2px solid #8b4513;
+    border-radius: 12px;
     color: #fff;
-    display: inline-block;
+    font-family: 'MedievalSharp', cursive;
+    font-size: 1.5em;
     margin: 10px;
-    padding: 20px;
+    width: 200px; /* Adjust width as necessary */
+    height: 100px; /* Adjust height as necessary */
     text-decoration: none;
-    transition: background 0.3s;
+    text-shadow: 1px 1px 2px #000;
+    transition: transform 0.3s ease, background-size 0.3s ease;
 }
 
 .button:hover {
-    background: #666;
+    transform: scale(1.1); /* Scale up the button */
+    background-size: 110% 110%; /* Scale up the background image slightly more */
+}
+
+.button:active {
+    transform: scale(0.9); /* Scale down the button when clicked */
+    background-size: 100% 100%; /* Ensure the background scales with the button */
 }
