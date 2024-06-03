@@ -14,6 +14,22 @@ body {
     margin-top: 50px;
 }
 
+.game-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: 20px;
+}
+
+.options, .main-action, .results {
+    background-color: rgba(0, 0, 0, 0.5);
+    border: 2px solid #8b4513;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 10px;
+    width: 200px;
+}
+
 h1 {
     font-size: 3em;
     margin-bottom: 20px;
@@ -43,6 +59,41 @@ h1 {
     text-decoration: none;
     text-shadow: 1px 1px 2px #000;
     transition: transform 0.3s ease, background-size 0.3s ease;
+}
+
+.options h3, .results h3 {
+    margin-top: 0;
+}
+
+
+.option-btn, #roll-dice-btn {
+    display: block;
+    width: 100%;
+    background: url(../images/frame_bouton.png) no-repeat center center;
+    background-size: cover;
+    border: 2px solid #8b4513;
+    border-radius: 12px;
+    color: #fff;
+    font-family: 'MedievalSharp', cursive;
+    font-size: 1.5em;
+    margin: 10px 0;
+    padding: 10px;
+    text-decoration: none;
+    text-shadow: 1px 1px 2px #000;
+    transition: transform 0.3s, background-size 0.3s;
+}
+
+.option-btn:hover, #roll-dice-btn:hover {
+    transform: scale(1.1);
+    background-size: 110% 110%;
+}
+
+.option-btn:active, #roll-dice-btn:active {
+    transform: scale(0.9);
+}
+
+#dice-results {
+    margin-top: 10px;
 }
 
 .button:hover {
