@@ -4,14 +4,34 @@
 <h1>Hubert Bonisseur de la Bath</h1>
 <div class="game-container">
     <div class="options">
-        <h3>Options</h3>
-        <button class="option-btn">Option 1</button>
-        <button class="option-btn">Option 2</button>
-        <button class="option-btn">Option 3</button>
-        <!-- Ajoutez d'autres boutons d'options si nécessaire -->
+        <h3>Capacités</h3>
+        <ul class="capabilities-list">
+            <li>
+                <input type="checkbox" id="capability1">
+                <label for="capability1">Fougue</label>
+                <p>pv + 1d10 + niv guerrier</p>
+                <p>Charges max: 1</p>
+                <p>Charges restantes: <span id="charges-capability1">1</span></p>
+            </li>
+            <li>
+                <input type="checkbox" id="capability2">
+                <label for="capability2">Esprit combatif</label>
+                <p>Effet: +1 action, +1 action bonus, +1 réaction pour ce tours</p>
+                <p>Charges max: 3</p>
+                <p>Charges restantes: <span id="charges-capability2">3</span></p>
+            </li>
+            <!-- Ajoutez d'autres capacités si nécessaire -->
+        </ul>
     </div>
     <div class="main-action">
-        <button id="roll-dice-btn">Lancer les dés</button>
+        <h3>Sélectionnez les Actions</h3>
+        <button class="select-action-btn" data-action="coup épé à deux mains">coup épé à deux mains</button>
+        <!-- Ajoutez d'autres boutons d'actions si nécessaire -->
+        <h3>Actions du Tour</h3>
+        <div id="selected-actions">
+            <!-- Les actions sélectionnées seront affichées ici -->
+        </div>
+        <button id="execute-actions-btn">Activer les Actions</button>
     </div>
     <div class="results">
         <h3>Résultats</h3>
